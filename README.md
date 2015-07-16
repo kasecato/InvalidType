@@ -1,4 +1,4 @@
-#Invalid Type
+#Incompatible Types
 
 0: type, 1: list of type, 2: list of type
 
