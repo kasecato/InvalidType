@@ -13,7 +13,7 @@ public class InvalidTypeTest {
         BigDecimal val = new BigDecimal("2");
 
         // act
-        FooEntity actual = InvalidType.convert(FooEntity.class, key, val);
+        FooEntity actual = InvalidType.convert(FooEntity.class, key, val).orElse(new FooEntity());
 
         // assert
         assertEquals(val, actual.status);

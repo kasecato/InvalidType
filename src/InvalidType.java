@@ -15,7 +15,7 @@ public class InvalidType {
         if (destClass.isAssignableFrom(BigDecimal.class) || destClass.isAssignableFrom(Integer.class)) {
             BigDecimal b = null;
             if (destClass.isAssignableFrom(BigDecimal.class)) {
-                return (M) b;
+                return (M) o;
             }
         }
         return (M) o;
