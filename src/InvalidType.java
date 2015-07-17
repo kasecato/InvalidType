@@ -12,8 +12,7 @@ public class InvalidType {
     }
 
     public static <M, T extends M> M convert(Class<T> destClass, Object o) {
-        if (destClass.isAssignableFrom(BigDecimal.class) || destClass.isAssignableFrom(Integer.class)) {
-            BigDecimal b = null;
+        if (destClass.isAssignableFrom(BigDecimal.class)) {
             if (destClass.isAssignableFrom(BigDecimal.class)) {
                 return (M) o;
             }
